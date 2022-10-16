@@ -1,0 +1,104 @@
+{
+  "name": "Decentralized Website List",
+  "timestamp": "2022-10-14 11:03:27+00:00",
+  "websites": [
+    {
+      "name": "Vitalik Buterin's website",
+      "logo": "https://ipfs.io/ipfs/QmSP4nq9fnN9dAiCj42ug9Wa79rqmQerZXZch82VqpiH7U/image.gif",
+      "type": "ENS",
+      "value": "vitalik.eth",
+      "tags": [
+        "Blog", "English"
+      ],
+      "feeds": [
+        {
+          "type": "application/rss+xml",
+          "file": "feed.xml"
+        }
+      ]
+    },
+    {
+      "name": "planetable.eth",
+      "description": "Build, host, and follow decentralized websites on IPFS + ENS",
+      "logo": "https://planetable.eth.limo/avatar.png",
+      "type": "ENS",
+      "value": "planetable.eth",
+      "tags": [
+        "Blog", "Planet", "English"
+      ],
+      "feeds": [
+        {
+          "type": "application/rss+xml",
+          "file": "rss.xml"
+        }
+      ]
+    },
+    {
+      "name": "olivida.eth",
+      "description": "Building [planetable.xyz](https://planetable.xyz)",
+      "logo": "https://olivida.eth.limo/avatar.png",
+      "type": "ENS",
+      "value": "olivida.eth",
+      "tags": [
+        "Blog", "Planet", "English"
+      ],
+      "feeds": [
+        {
+          "type": "application/rss+xml",
+          "file": "rss.xml"
+        }
+      ]
+    },
+    {
+      "name": "映昕",
+      "logo": "https://assets.matters.news/imgCached/NWHFTDYomHBDpO5ifeer5XaLkIWnnlfNMPOXtaBR1opl2dBlleBUZWyagpNXDdhBX46XpnYaEHHsdB5CFZZlDqzYsQqLjh16nQdq=s250.png",
+      "type": "IPNS",
+      "value": "k51qzi5uqu5djhtl56a6tit89nutvixcqj1o6gk8rw2tx4z31aw5fwob2jb0ho",
+      "tags": [
+        "Blog", "Matters", "Chinese"
+      ],
+      "feeds": [
+        {
+          "type": "application/rss+xml",
+          "file": "rss.xml"
+        }
+      ]
+    },
+    {
+      "name": "Zefram’s Blog",
+      "description": "Decentralizing our financial and governance systems, using the power of Ethereum.",
+      "logo": "https://zefram.xyz/images/self-portrait.jpg",
+      "type": "ENS",
+      "value": "zefram.eth",
+      "tags": [
+        "Blog", "English"
+      ],
+      "feeds": [
+        {
+          "type": "application/rss+xml",
+          "file": "index.xml"
+        },
+        {
+          "type": "application/feed+json",
+          "file": "index.json"
+        }
+      ]
+    },
+    {
+      "name": "VagrantPi Blog ",
+      "description": "生活札記，記錄些學習筆記和生活",
+      "logo": "https://res.cloudinary.com/cakeresume/image/upload/v1494230950/ifkjm068hoiovu9onb5q.png",
+      "type": "ENS",
+      "value": "vagrantpi.eth",
+      "tags": [
+        "Blog", "Chinese"
+      ],
+      "feeds": [
+        {
+          "type": "application/atom+xml",
+          "file": "atom.xml"
+        }
+      ]
+    }
+  ]
+}
