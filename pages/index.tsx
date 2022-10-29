@@ -25,11 +25,11 @@ const IndexPage: NextPage = () => {
 
     return (
         <>
-            <div className="pt-16 lg:pt-12 space-y-12">
-                <Container>
+            <div className="lg:pt-12 divide-y divide-slate-100">
+                <Container className="hidden lg:block px-10">
                     <h1 className="text-4xl font-bold leading-7 text-slate-900">Websites</h1>
                 </Container>
-                <div className="divide-y divide-slate-100 sm:mt-4 lg:mt-8 lg:border-t lg:border-slate-100">
+                <div className="divide-y divide-slate-100 lg:mt-12 lg:border-t lg:border-slate-100">
                     {
                         list.websites.map((website, index) => (
                             <WebsiteItem key={index} website={website}/>
@@ -51,9 +51,11 @@ const WebsiteItem = (props: WebsiteItemProp) => {
             <article className="py-10 sm:py-12">
                 <Container>
                     <div className="flex space-x-4">
-                        <Image src={props.website.logo ?? faviconImage} width={64} height={64} priority className="rounded-xl bg-slate-100"/>
-                        <div className="flex flex-col justify-between flex-1">
-                            <h3 className="text-2xl font-bold">{props.website.name}</h3>
+                        <div className="flex-shrink-0 justify-center flex">
+                            <Image src={props.website.logo ?? faviconImage} width={64} height={64} priority className="rounded-xl bg-slate-100"/>
+                        </div>
+                        <div className="flex flex-col justify-between">
+                            <h3 className="text-2xl font-bold line-clamp-1">{props.website.name}</h3>
                             <p className="line-clamp-1">{props.website.description ?? "This website has no description"}</p>
                         </div>
                     </div>
