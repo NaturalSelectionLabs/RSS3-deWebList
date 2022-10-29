@@ -45,6 +45,15 @@ type JSONFeed = {
     }[];
 };
 
+type PlanetFeed = {
+    articles: {
+        title: string;
+        content: string;
+        link: string;
+        created: string
+    }[];
+}
+
 const WebsitePage: NextPage = () => {
     const router = useRouter();
     const { value } = router.query;
@@ -122,11 +131,20 @@ const WebsitePage: NextPage = () => {
         };
 
         const loadPlanetFeed = async (response: Response): Promise<WebsiteFeedListItem[]> => {
-            // TODO
+            const planetFeed: PlanetFeed = await response.json();
 
-            console.log(response);
+            let feeds: WebsiteFeedListItem[] = [];
 
-            return [];
+            planetFeed.articles.map((article) => {
+                feeds.push({
+                    title: article.title!,
+                    description: article.content,
+                    url: article.link,
+                    created_at: article.created,
+                });
+            });
+
+            return feeds;
         };
 
         const buildFeedURL = async (website: Website) => {
