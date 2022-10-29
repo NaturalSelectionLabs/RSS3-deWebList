@@ -257,18 +257,20 @@ type WebsiteHeaderProps = {
 };
 
 const WebsiteHeader = (props: WebsiteHeaderProps) => {
+    const router = useRouter();
+
     return (
         <Container>
             <header className="flex flex-col space-y-10 py-10">
                 <div className="flex items-center gap-6">
                     <div className="flex flex-col">
-                        <Link
-                            href="/"
-                            className="flex items-center space-x-2 text-slate-600"
+                        <a
+                            onClick={() => router.back()}
+                            className="flex items-center space-x-2 text-slate-600 cursor-pointer"
                         >
                             <MdArrowBackIosNew/>
                             <span>Back</span>
-                        </Link>
+                        </a>
                         <div className="flex mt-10 space-x-8">
                             <div>
                                 <Image
