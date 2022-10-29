@@ -4,6 +4,7 @@ import Link from "next/link";
 import list from "../lists/websites.json";
 import Image from "next/image";
 import faviconImage from "../public/favicon.svg";
+import md5 from "blueimp-md5";
 
 type Website = {
     name: string;
@@ -15,6 +16,13 @@ type Website = {
 }
 
 const IndexPage: NextPage = () => {
+    // Set default logo
+    list.websites.map((website) => {
+        if (!website.logo) {
+            website.logo = `https://www.gravatar.com/avatar/${md5(website.value)}?default=retro`;
+        }
+    });
+
     return (
         <>
             <div className="pt-16 lg:pt-12 space-y-12">
