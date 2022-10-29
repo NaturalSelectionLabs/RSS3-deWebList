@@ -34,7 +34,7 @@ const Header = () => {
                 className="relative z-10 mx-auto px-4 py-10 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:border-x lg:border-slate-200 lg:py-12 lg:px-8 xl:px-12">
                 <Link
                     href="/"
-                    className="relative mx-auto block w-48 overflow-hidden rounded-lg bg-slate-200 shadow-xl shadow-slate-200 sm:w-64 sm:rounded-xl lg:w-auto lg:rounded-2xl"
+                    className="relative mx-auto hidden overflow-hidden rounded-lg bg-slate-200 shadow-xl shadow-slate-200 sm:rounded-xl lg:w-auto lg:rounded-2xl lg:block lg:mb-12"
                     aria-label="Homepage"
                 >
                     <Image
@@ -47,7 +47,7 @@ const Header = () => {
                     <div
                         className="absolute inset-0 rounded-lg ring-1 ring-inset ring-black/10 sm:rounded-xl lg:rounded-2xl"/>
                 </Link>
-                <div className="mt-10 text-center lg:mt-12 lg:text-left">
+                <div className="text-center lg:text-left">
                     <p className="text-2xl font-bold text-slate-900">
                         <Link href="/">Decentralized Website List</Link>
                     </p>
@@ -58,7 +58,7 @@ const Header = () => {
                 <div className="mt-10 hidden lg:block">
                     <ContributingSection/>
                 </div>
-                <div className="mt-10 lg:mt-12">
+                <div className="mt-10">
                     <SocialSection/>
                 </div>
             </div>
