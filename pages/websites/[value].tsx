@@ -64,6 +64,19 @@ const WebsitePage: NextPage = () => {
     const [feedURL, setFeedURL] = useState<string>("");
     const [feeds, setFeeds] = useState<WebsiteFeedListItem[]>([]);
 
+    const buildWebsiteURL = (website: Website): string => {
+        switch (website.type) {
+        case "ENS":
+            return `https://${website.value}.limo`;
+        case "IPNS":
+            return `https://gateway.ipfs.io/ipns/${website.value}`;
+        case "IPFS":
+            return `https://gateway.ipfs.io/ipfs/${website.value}`;
+        default:
+            throw "unsupported website type";
+        }
+    };
+
     useEffect(() => {
         if (!router.isReady) {
             return;
@@ -76,19 +89,6 @@ const WebsitePage: NextPage = () => {
         setWebsite(website);
 
         const parser = new Parser();
-
-        const buildWebsiteURL = (website: Website): string => {
-            switch (website.type) {
-            case "ENS":
-                return `https://${website.value}.limo`;
-            case "IPNS":
-                return `https://gateway.ipfs.io/ipns/${website.value}`;
-            case "IPFS":
-                return `https://gateway.ipfs.io/ipfs/${website.value}`;
-            default:
-                throw "unsupported website type";
-            }
-        };
 
         const loadRSSFeed = async (
             response: Response
@@ -175,6 +175,13 @@ const WebsitePage: NextPage = () => {
                 if (feeds.length > 0) {
                     feeds = feeds.filter((feed) => {
                         return !(feed.title === "" && feed.description === "");
+                    });
+
+                    // Complete feed url
+                    feeds.map((feed) => {
+                        if (!feed.url.startsWith("http://") && !feed.url.startsWith("https://")) {
+                            feed.url =  `${buildWebsiteURL(website)}${feed.url}`;
+                        } 
                     });
 
                     setFeeds(feeds);
