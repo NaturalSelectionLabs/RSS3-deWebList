@@ -1,15 +1,14 @@
 # Decentralized Website List
 
-![GitHub license](https://img.shields.io/github/license/NaturalSelectionLabs/decentralized-website-list?style=flat-square)
-![GitHub all releases](https://img.shields.io/github/downloads/NaturalSelectionLabs/decentralized-website-list/total?style=flat-square)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/NaturalSelectionLabs/decentralized-website-list?style=flat-square)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/NaturalSelectionLabs/decentralized-website-list?style=flat-square)
+![GitHub license](https://img.shields.io/github/license/NaturalSelectionLabs/RSS3-deweblist?style=flat-square)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/NaturalSelectionLabs/RSS3-deweblist?style=flat-square)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/NaturalSelectionLabs/RSS3-deweblist?style=flat-square)
 
 This project hopes to help everyone find some interesting decentralized websites.
 
 ## Contributing
 
-Edit the [websites.json](https://github.com/NaturalSelectionLabs/decentralized-website-list/edit/main/lists/websites.json) file and create a [pull request](https://github.com/NaturalSelectionLabs/decentralized-website-list/pulls).
+Edit the [websites.json](https://github.com/NaturalSelectionLabs/RSS3-deweblist/edit/main/lists/websites.json) file and create a [pull request](https://github.com/NaturalSelectionLabs/RSS3-deweblist/pulls).
 
 ## Specification
 
