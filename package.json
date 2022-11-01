@@ -1,6 +1,8 @@
 {
   "name": "deweblist",
-  "version": "0.1.0",
+  "description": "Explore the many awesome decentralized websites. Developed by RSS3.",
+  "version": "1.0.0",
+  "license": "CC0 1.0 Universal",
   "private": true,
   "scripts": {
     "dev": "next dev",
