@@ -107,7 +107,6 @@ const WebsitePage: NextPage = () => {
                     created_at: item.pubDate!,
                 });
             });
-
             return feeds;
         };
 
@@ -159,17 +158,19 @@ const WebsitePage: NextPage = () => {
 
                 let feeds: WebsiteFeedListItem[] = [];
 
-                switch (feed.type) {
-                case "application/feed+json":
-                    feeds = await loadJSONFeed(response);
-                    break;
-                case "application/planet+json":
-                    feeds = await loadPlanetFeed(response);
-                    break;
-                case "application/rss+xml":
-                case "application/atom+xml":
-                    feeds = await loadRSSFeed(response);
-                    break;
+                if (response.ok) {
+                    switch (feed.type) {
+                    case "application/feed+json":
+                        feeds = await loadJSONFeed(response);
+                        break;
+                    case "application/planet+json":
+                        feeds = await loadPlanetFeed(response);
+                        break;
+                    case "application/rss+xml":
+                    case "application/atom+xml":
+                        feeds = await loadRSSFeed(response);
+                        break;
+                    }
                 }
 
                 if (feeds.length > 0) {
