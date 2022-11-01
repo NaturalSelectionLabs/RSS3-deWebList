@@ -218,8 +218,9 @@ const WebsitePage: NextPage = () => {
     return (
         <>
             <Head>
-                <title>{website.name} | deWebList</title>
-                <meta property="og:title" content={`${website.name} | deWebList`}/>
+                <title>{website.name} | deWebList | Developed by RSS3</title>
+                <meta property="og:title" content={`${website.name} | deWebList | Developed by RSS3`}/>
+                <meta property="og:image" content="https://deweblist.rss3.io/OG.png" />
             </Head>
             <article className="divide-y divide-slate-100">
                 <WebsiteHeader website={website} websiteURL={websiteURL} feedURL={feedURL}/>
