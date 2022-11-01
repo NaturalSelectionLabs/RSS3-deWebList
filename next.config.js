@@ -9,6 +9,7 @@ const nextConfig = {
                 hostname: "**",
             },
         ],
+        unoptimized : true,
     },
     experimental: {
         newNextLinkBehavior: true,
