@@ -31,8 +31,8 @@ type Website = {
     description?: string;
     type: WebsiteType;
     value: string; // ENS domain or IPFS CID
-    tags: [string],
-    feeds: [WebsiteFeed];
+    tags: string[],
+    feeds: WebsiteFeed[];
 }
 ```
 
