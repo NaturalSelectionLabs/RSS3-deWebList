@@ -1,6 +1,6 @@
 {
   "name": "Decentralized Website List",
-  "timestamp": "2022-10-14 11:03:27+00:00",
+  "timestamp": "2022-11-01 10:40:04+00:00",
   "websites": [
     {
       "name": "Vitalik Buterin's website",
@@ -1410,7 +1410,7 @@
       ]
     },
     {
-      "name": "\uD834\uDF1AProof of Release",
+      "name": "𝌚Proof of Release",
       "description": "Other than the future plan or roadmap, we care more about product releases in Web3. Curated by Zhixiong Pan (@nake13)",
       "type": "ENS",
       "value": "proofofrelease.eth",
