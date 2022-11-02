@@ -72,6 +72,8 @@ const WebsitePage: NextPage = () => {
             return `https://gateway.ipfs.io/ipns/${website.value}`;
         case "IPFS":
             return `https://gateway.ipfs.io/ipfs/${website.value}`;
+        case "xLog":
+            return `https://${website.value}.xlog.app`;
         default:
             throw "unsupported website type";
         }

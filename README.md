@@ -8,17 +8,20 @@ This project hopes to help everyone find some interesting decentralized websites
 
 ## Contributing
 
-Edit the [websites.json](https://github.com/NaturalSelectionLabs/RSS3-deweblist/edit/main/lists/websites.json) file and create a [pull request](https://github.com/NaturalSelectionLabs/RSS3-deweblist/pulls).
+Edit the [websites.json](https://github.com/NaturalSelectionLabs/RSS3-deweblist/edit/main/lists/websites.json) file and
+create a [pull request](https://github.com/NaturalSelectionLabs/RSS3-deweblist/pulls).
 
 ## Specification
 
-The decentralized site list is a JSON file, All list files must conform to the [JSON specification](https://www.json.org/json-en.html).
+The decentralized site list is a JSON file, All list files must conform to
+the [JSON specification](https://www.json.org/json-en.html).
 
 ```typescript
 enum WebsiteType {
     ENS = "ENS",
     IPNS = "IPNS",
     IPFS = "IPFS",
+    XLOG = "xLog"
 }
 
 type WebsiteFeed = {

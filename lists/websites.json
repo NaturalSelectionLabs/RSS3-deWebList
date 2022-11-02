@@ -45,12 +45,30 @@
       "tags": [
         "Blog",
         "Planet",
-        "English"
+        "Chinese"
       ],
       "feeds": [
         {
           "type": "application/rss+xml",
           "file": "rss.xml"
+        }
+      ]
+    },
+    {
+      "name": "DIYgod",
+      "description": "写代码是热爱，写到世界充满爱！",
+      "logo": "https://4everland.xyz/ipfs/bafybeibefx2tyow77m2wcnsh5anaaxfy7ypxbcuapb52c4h255onqp72ye",
+      "type": "xLog",
+      "value": "diygod",
+      "tags": [
+        "Blog",
+        "xLog",
+        "Chinese"
+      ],
+      "feeds": [
+        {
+          "type": "application/feed+json",
+          "file": "feed"
         }
       ]
     },
