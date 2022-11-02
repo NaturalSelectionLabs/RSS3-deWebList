@@ -392,22 +392,6 @@
       ]
     },
     {
-      "name": "null_radix",
-      "description": "This site was made with haunt. You can find the code here.",
-      "type": "ENS",
-      "value": "nullradix.eth",
-      "tags": [
-        "Blog",
-        "English"
-      ],
-      "feeds": [
-        {
-          "type": "application/rss+xml",
-          "file": "feed.xml"
-        }
-      ]
-    },
-    {
       "name": "Jirong's sandbox",
       "description": "Data Scientist and Quantitative Investor and Trader",
       "logo": "https://jironghuang.eth.limo/img/jirong.jpeg",
@@ -1476,22 +1460,6 @@
         {
           "type": "application/rss+xml",
           "file": "/feed/index.xml"
-        }
-      ]
-    },
-    {
-      "name": "NicholasHarris.eth",
-      "logo": "https://nicholasharris.eth.limo/wp-content/uploads/2022/08/Screen-Shot-2022-08-18-at-7.01.31-PM.png",
-      "type": "ENS",
-      "value": "nicholasharris.eth",
-      "tags": [
-        "Blog",
-        "English"
-      ],
-      "feeds": [
-        {
-          "type": "application/rss+xml",
-          "file": "index.xml"
         }
       ]
     },
