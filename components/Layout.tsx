@@ -104,7 +104,7 @@ const ContributingSection = () => {
                 href="https://github.com/NaturalSelectionLabs/decentralized-website-list/edit/main/lists/websites.json"
                 target="_blank">
                 <button type="button"
-                    className="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-6 py-3 space-x-2 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    className="inline-flex items-center rounded-md border border-transparent bg-primary-blue px-6 py-3 space-x-2 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     <MdAdd size={24} color={"white"} aria-hidden="true"/>
                     <span className="font-bold">Add Your Website</span>
                 </button>
