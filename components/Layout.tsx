@@ -2,6 +2,8 @@ import Link from "next/link";
 import { PropsWithChildren } from "react";
 import Image from "next/image";
 import faviconImage from "../public/favicon.svg";
+import RSS3Logo from "../public/RSS3Logo.svg";
+import RSS3LogoV from "../public/RSS3LogoV.svg";
 import { SiDiscord, SiGithub, SiGmail, SiInstagram, SiTelegram, SiTwitter } from "react-icons/si";
 import { MdAdd } from "react-icons/md";
 
@@ -20,13 +22,11 @@ const Header = () => {
         <header
             className="bg-slate-50 lg:fixed lg:inset-y-0 lg:left-0 lg:flex lg:w-112 lg:items-start lg:overflow-y-auto xl:w-120">
             <div
-                className="hidden lg:sticky lg:top-0 lg:flex lg:w-16 lg:flex-none lg:items-center lg:whitespace-nowrap lg:py-12 lg:text-sm lg:leading-7 lg:[writing-mode:vertical-rl]">
+                className="hidden lg:sticky lg:top-0 lg:flex lg:w-16 lg:flex-none lg:items-center lg:whitespace-nowrap lg:py-12 lg:text-sm lg:leading-7 lg:[writing-mode:vertical-rl] gap-4">
                 <span className="font-mono text-slate-500">Develop by</span>
-                <div className="mt-6 flex space-y-1 font-bold text-slate-900">
-                    <Link href="https://rss3.io" target="_blank">
-                        <span className="text-blue-500">-</span>
-                        <span>RSS3</span>
-                        <span className="text-blue-500">-</span>
+                <div className="space-y-1 font-bold text-slate-900">
+                    <Link className="flex items-center" href="https://rss3.io" target="_blank">
+                        <Image src={ RSS3LogoV} alt="" width={12} height={48} priority />
                     </Link>
                 </div>
             </div>
@@ -34,7 +34,7 @@ const Header = () => {
                 className="relative z-10 mx-auto px-4 py-10 sm:px-6 md:max-w-2xl md:px-4 lg:min-h-full lg:flex-auto lg:border-x lg:border-slate-200 lg:py-12 lg:px-8 xl:px-12">
                 <Link
                     href="/"
-                    className="relative mx-auto hidden overflow-hidden rounded-lg bg-slate-200 shadow-xl shadow-slate-200 sm:rounded-xl lg:w-auto lg:rounded-2xl lg:block lg:mb-12"
+                    className="relative mx-auto hidden overflow-hidden rounded-lg bg-white shadow-xl shadow-slate-200 sm:rounded-xl lg:w-auto lg:rounded-2xl lg:block lg:mb-12"
                     aria-label="Homepage"
                 >
                     <Image
@@ -79,15 +79,11 @@ const Footer = () => {
         <footer className="border-t border-slate-200 bg-slate-50 py-10 pb-40 sm:py-16 sm:pb-32 lg:hidden">
             <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4">
                 <ContributingSection/>
-                <div className="mt-8 flex items-center text-sm leading-7 text-slate-900 space-x-1">
+                <div className="mt-8 flex items-center text-sm leading-7 text-slate-900 gap-2">
                     <span>Develop by</span>
-                    <div className="space-x-1 font-bold">
-                        <Link href="https://rss3.io" target="_blank">
-                            <span className="text-blue-500">-</span>
-                            <span>RSS3</span>
-                            <span className="text-blue-500">-</span>
-                        </Link>
-                    </div>
+                    <Link className="flex items-center" href="https://rss3.io" target="_blank">
+                        <Image src={ RSS3Logo} width={48} height={12} priority/>
+                    </Link>
                 </div>
             </div>
         </footer>
@@ -104,7 +100,7 @@ const ContributingSection = () => {
                 href="https://github.com/NaturalSelectionLabs/decentralized-website-list/edit/main/lists/websites.json"
                 target="_blank">
                 <button type="button"
-                    className="inline-flex items-center rounded-md border border-transparent bg-blue-600 px-6 py-3 space-x-2 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    className="inline-flex items-center rounded-md border border-transparent bg-primary-blue px-6 py-3 space-x-2 text-base font-medium text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
                     <MdAdd size={24} color={"white"} aria-hidden="true"/>
                     <span className="font-bold">Add Your Website</span>
                 </button>
@@ -116,32 +112,32 @@ const ContributingSection = () => {
 const SocialSection = () => {
     const socials = [
         {
-            "icon": <SiGithub size={24}/>,
+            "icon": <SiGithub size={18}/>,
             "name": "GitHub",
             "url": "https://github.com/NaturalSelectionLabs",
         },
         {
-            "icon": <SiTwitter size={24}/>,
+            "icon": <SiTwitter size={18}/>,
             "name": "Twitter",
             "url": "https://twitter.com/rss3_",
         },
         {
-            "icon": <SiDiscord size={24}/>,
+            "icon": <SiDiscord size={18}/>,
             "name": "Discord",
             "url": "https://discord.com/invite/aGuwzF2hW4",
         },
         {
-            "icon": <SiTelegram size={24}/>,
+            "icon": <SiTelegram size={18}/>,
             "name": "Telegram",
             "url": "https://t.me/rss3_en",
         },
         {
-            "icon": <SiInstagram size={24}/>,
+            "icon": <SiInstagram size={18}/>,
             "name": "Instagram",
             "url": "https://www.instagram.com/rss3.io/",
         },
         {
-            "icon": <SiGmail size={24}/>,
+            "icon": <SiGmail size={18}/>,
             "name": "Email",
             "url": "mailto:contact@rss3.io",
         }
@@ -152,7 +148,7 @@ const SocialSection = () => {
             <h2 className="sr-only font-bold text leading-7 text-slate-900 lg:not-sr-only">
                 Social
             </h2>
-            <ul className="mt-4 flex justify-center gap-10 text-base font-medium leading-7 text-slate-700 sm:gap-8 lg:flex-col lg:gap-4">
+            <ul className="mt-4 flex justify-center gap-10 text-base font-medium leading-7 text-black sm:gap-8 lg:flex-col lg:gap-4">
                 {
                     socials.map((social, index) => (
                         <li key={index}>

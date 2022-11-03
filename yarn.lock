@@ -220,11 +220,6 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
   integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
-"@types/voca@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@types/voca/-/voca-1.4.2.tgz#4d2ceef3582c2a1f6a1574f71f0897400d910583"
-  integrity sha512-Vmw8euGSdVlcDV69LoixtuervYUim5u6Vgp41PNxrHVGIo4vxSKMhW0I9MmBKbk3gtveNFzdHIVzyW1DpECzYw==
-
 "@typescript-eslint/parser@^5.21.0":
   version "5.40.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-5.40.0.tgz#432bddc1fe9154945660f67c1ba6d44de5014840"
@@ -674,11 +669,6 @@ electron-to-chromium@^1.4.251:
   version "1.4.283"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.283.tgz#d4f263f5df402fd799c0a06255d580dcf8aa9a8e"
   integrity sha512-g6RQ9zCOV+U5QVHW9OpFR7rdk/V7xfopNXnyAamdpFgCHgZ1sjI8VuR1+zG2YG/TZk+tQ8mpNkug4P8FU0fuOA==
-
-ellipsed@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/ellipsed/-/ellipsed-1.5.0.tgz#37bfcb185eea7c640c5775a4a44a4ef19c5e63da"
-  integrity sha512-2R/nHb1xIWZHSO3fZ4ZsNBXjE7S3wUDk+sxVia5wNt+FVd4INaVSZAINaXhVLJDjgaqIqPct7Ze2njy1dnMEMA==
 
 emoji-regex@^9.2.2:
   version "9.2.2"

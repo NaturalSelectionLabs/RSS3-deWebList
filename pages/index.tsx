@@ -63,7 +63,7 @@ const WebsiteItem = (props: WebsiteItemProp) => {
                         {
                             props.website.tags.map((tag, index) => (
                                 <li key={index}
-                                    className="inline-block bg-slate-500 text-sm rounded px-1 py-0.5 text-white">{tag}</li>
+                                    className="inline-block bg-black text-sm rounded px-2 py-1 text-white">{tag}</li>
                             ))
                         }
                     </ul>

@@ -11,6 +11,9 @@ module.exports = {
                 112: "28rem",
                 120: "30rem",
             },
+            colors: {
+                'primary-blue': '#0072ff'
+            }
         },
     },
     plugins: [
