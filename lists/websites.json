@@ -1579,6 +1579,24 @@
           "file": "rss.xml"
         }
       ]
+    },
+    {
+      "name": "「The Nanami」",
+      "description": "游戏宅的自我介绍",
+      "logo": "https://4everland.xyz/ipfs/bafkreiddfguyjbegyqatrlbop4oxd62iuilfw2d7fm7hc4bqc6szgr5ijq",
+      "type": "xLog",
+      "value": "nanami",
+      "tags": [
+        "Blog",
+        "xLog",
+        "Chinese"
+      ],
+      "feeds": [
+        {
+          "type": "application/feed+json",
+          "file": "feed"
+        }
+      ]
     }
   ]
 }
